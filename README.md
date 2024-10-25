@@ -1,53 +1,30 @@
 # Library-Management-System
-The chart shows the overall flow and pages/screens in the application - Library Management System
-Maintenance module is mandatory to be developed to create the reports and transactions modules
-Basic formatting on screen is acceptable 
-Chart link is on all pages to help navigate the user to the chart. It is not required in the working application.
-Radio buttons - only one can be selected
-Checkbox - checked implies yes and unchecked implies no.
-passwords need to be hidden when typed on the login pages in the working application.
-Admin can access maintenance, reports and transactions.
-User cannot access maintenance. However user has access to reports and transactions.
-Validations on forms
-Book Available
-One of the text box or drop down to be filled in before submitting the form.
-If none selected - user must get a message on the same page to make a valid selection
-Search Results 
-Against the available books, in the row, the last column will have a radio button that is selectable. 
-Book Issue
-Name of book required
-Name of author will get automatically populated and is non editable.
-Issue Date - cannot be lesser than today.
-Return Date - automatically populated with a date 15 days ahead. It can be edited to a date earlier than that. But not greater than 15 days.
-Remarks is non-mandatory.
-If the form is submitted without these details, an error is displayed on the page , to make a valid selection of the feature.
-Return Book
-Name of Book - required
-Author name - automically populated and non editable.
-Serial No of the book is a mandatory field
-Issue Date - is automatically populated - and non editable
-Return Date - is automatically populated to the date selected while issuing the book. It can be edited to a date earlier or later than that.
-If the form is submitted without these details, an error is displayed on the page, to make a valid selection of the feature.
-With the confirm option used the user is taken to the Pay Fine page, irrespective of whether fine is there or not. 
-Fine Pay
-All the fields are populated except - Fine Paid and Remarks
-If there is no calculated fine, then the user can press confirm and the transaction will be successfully completed.
-For a pending fine, the paid fine check box needs to be selected before the user can complete the return book transaction.
-If the form is submitted without these details, an error is displayed on the page, to make a valid selection of the feature. And book will not be returned till then.
-Add Membership
-All fields mandatory and the user needs to select one option - 6 months or 1 year or 2 years . By default - 6 months is selected.
-Update Membership
-Membership Number is mandatory, based on which the rest of the fields are populated. User can extend their membership or cancel their membership
-By default - six months extension of membership selected.
-Add Book
-One of the options movie or book to be selected. By default - book.
-All fields mandatory.
-An error message to be thrown on the page if user does not enter all details and confirms the form.
-Update Book
-One of the options movie or book to be selected. By default - book.
-All fields mandatory.
-An error message to be thrown on the page if user does not enter all details and confirms the form.
-User Management
-One of the options new user or existing to be selected. By default - new.
-Name is mandatory
-![image](https://github.com/user-attachments/assets/019fdcaf-7206-4be3-b2d8-6768a5cb23bf)
+Overview
+The Library Management System (LMS) is designed to streamline the process of managing library resources, facilitating user interactions, and generating necessary reports. 
+This application includes features for both administrators and regular users, focusing on book transactions, membership management, and reporting functionalities.
+
+# Features
+
+# User Roles
+* Admin: Full access to Maintenance, Reports, and Transactions modules.
+* User: Access to Reports and Transactions only.
+
+# Key Modules
+* Maintenance (Admin only)
+* Reports (Available to both Users and Admin)
+* Transactions (Available to both Users and Admin)
+
+# User Interface
+* Navigation: A chart link is provided on all pages for easy navigation.
+* Form Elements: Includes radio buttons, checkboxes, and password fields with specific behaviors.
+
+# Functionalities
+* Book Issue: Allows users to issue books with automatic population of author names and controlled issue/return dates.
+* Return Book: Users can return books, with mandatory fields ensuring proper data entry.
+* Fine Payment: Facilitates fine payments before returning books, with clear error handling.
+* Membership Management: Users can add or update their membership details.
+* Book Management: Administrators can add or update book records.
+
+# Validations
+* Form submissions require at least one input.
+* Error messages guide users for invalid submissions.
